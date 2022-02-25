@@ -8,7 +8,7 @@ import time
 cam = cv2.VideoCapture(1)
 # to tell the mediapipe that we are using hands solution from mediapipe library
 mpHands = mp.solutions.hands
-hands = mpHands.Hands(min_detection_confidence=0.6, min_tracking_confidence=0.6)  # use default value
+hands = mpHands.Hands(min_detection_confidence=0.5, min_tracking_confidence=0.5)  # use default value
 mpDraw = mp.solutions.drawing_utils
 # call this to change design of hand landmarks and lines
 handLmsStyle = mpDraw.DrawingSpec(color=(0, 0, 255), thickness=3)
